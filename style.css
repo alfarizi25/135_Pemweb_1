@@ -1,0 +1,363 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.logo{
+    display: contents;
+    font-family: helvetica;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
+    font-size: 35;
+    text-shadow: 2px 2px 4px rgba(48, 47, 47, 0.669);
+
+}
+
+
+body {
+    background-color:white;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.85); 
+    backdrop-filter: blur(10px); 
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: fixed; 
+    top: 0; 
+    z-index: 999; 
+    width: 100%; 
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 25;
+    color: rgb(175, 175, 175);
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+nav ul li a:hover {
+    color: white
+}
+
+.menu-icon{
+    color: white;
+    font-size: 30px;
+    display: none;
+
+}
+
+@media only screen and (max-width : 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        }
+
+    nav ul li:last-of-type{
+        padding-bottom: 25px;
+    }
+    nav ul.hidden {
+        display: none;
+    }
+    .menu-icon {
+        display: flex;
+        align-items: center;
+    }
+    .logo {
+        font-size: 25;
+    }
+}
+
+.home {
+    font-family: Helvetica;
+
+}
+
+h1 {
+        font-family: helvetica;
+        margin-top: 20px; 
+        padding-left: 20px; 
+        padding-top: 20px; 
+        font-size: 40px; 
+        text-align: right; 
+        width: 30%; 
+}
+
+
+p {
+    font-family: helvetica;
+    color: gray;
+    padding-left: 20px; 
+    padding-right: 20px; 
+    margin-top: 20px; 
+    margin-bottom: 30px; 
+    font-size: 20px; 
+    text-align: lef; 
+    width: 30%; 
+}
+
+
+
+
+/* buat mobile */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 44px;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 25px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        
+    }
+
+    p {
+        padding-left: 45px; 
+        padding-right: 45px; 
+        margin-top: 0px; 
+        margin-bottom: 30px; 
+        font-size: 15px; 
+        text-align: center; 
+        width: 100%;
+    }
+
+    img {
+        width: 200px; 
+        display: block;
+        margin: 70 auto 20px; 
+        float: none; 
+        border-radius: 100%;
+        margin-top: 100;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .h1-why {
+        text-align: center;
+        width: 100%;
+        padding-bottom: 25px;
+    }
+
+    .why {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .p-why {
+        text-align: center;
+        width: 100%; 
+    }
+
+    .btn{
+        margin-left: 170;
+    }
+
+    .h1-keahlian{
+        padding-left: 25;
+        text-align: center;
+    }
+    .p-keahlian{
+        text-align: center;
+        padding-left: 60;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        margin: 10 10 10 10px;
+        grid-gap: 10px;
+    }
+    
+    img{
+        object-fit: cover;
+    }
+    
+    h2{
+        color: white;
+        font-family: helvetica;
+        font-size: 18;
+        text-align: center;
+        margin: 10 22 100 10;
+        padding-left: 13;
+
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .grid > article {
+        box-shadow: 5 5 5px black;
+        border-radius: 30px;
+        align-content: center;
+        width: 150;
+        height: 150;
+    }
+    
+    .grid > article img {
+        border-radius: 10px;
+        width: 40;
+        margin: 100 0 5 55;
+
+    }
+    
+    .ai {
+        background-color: orange;
+
+    }
+    
+    .ps {
+        background-color:dodgerblue;
+    }
+    
+    .figma{
+        background-color: pink;
+    }
+    
+    .grid > article:hover{
+        transform: scale(1.04);
+    }
+ }
+
+
+
+@media only screen and (min-width: 768px) {
+    /* buat desktop */
+    img {
+        float: right;
+        margin: 100 400 0 250; 
+        width: 20%; 
+        border-radius: 100%;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+
+    }
+
+    .h1-profil{
+        width: calc(70% - 20px); 
+        margin: 100 0 30 300 ;  
+        text-align: left;  
+        padding: 140 0 0 0; 
+        font-size: 50;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        
+
+    }
+    .h1-why{
+        text-align: center;
+        margin: 100 0 30 700 ;  
+        font-size: 50;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        
+
+    }
+
+    p{
+        width: calc(70% - 20px); 
+        margin-left: 200;
+        padding: 0 0 0 100; 
+        font-size: 23;
+        text-align: left;
+    }
+
+    .p-why{
+        width: calc(70% - 20px); 
+        margin: 30 0 50 250 ;  
+        font-size: 23;
+        text-align: center;
+
+    }
+
+    .btn{
+        margin-left: 950;
+    }
+
+    .h1-keahlian{
+        margin: 100 0 30 725 ;  
+        text-align: center;  
+        font-size: 50;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 50 50 50 50;
+        gap: 30px;
+    }
+    
+    h2{
+        color: white;
+        font-family: helvetica;
+        font-size: 38;
+        text-align: center;
+        margin: 10 0 100 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .grid > article {
+        box-shadow: 5 5 5px black;
+        border-radius: 90px;
+        width: 600;
+        margin: 10 10 10 10;
+    }
+    
+    .grid > article img {
+        border-radius: 40px;
+        width: 120;
+        margin: 50 250 50 250;
+    }
+    
+    .ai {
+        background-color: orange;
+
+    }
+    
+    .ps {
+        background-color:dodgerblue;
+    }
+    
+    .figma{
+        background-color: pink;
+    }
+    
+    .grid > article:hover{
+        transform: scale(1.04);
+    
+    }
+
+} 
+
+
+.btn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 20 20 20 20;
+    font-size: 20px;
+    font-family: Helvetica;
+    font-weight: 550;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.326); 
+    backdrop-filter: blur(10px); }
+
+
